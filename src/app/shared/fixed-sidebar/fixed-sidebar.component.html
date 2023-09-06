@@ -1,0 +1,56 @@
+<aside class="main-sidebar sidebar-bg-dark sidebar-color-primary shadow">
+    <div class="logo-div" >
+        <img src="./assets/dist/img/logo_datacom1.png" width="120" class="brand-image opacity-80">
+    </div>
+    <div class="fondo-sidebar">
+        <div class="row">
+
+        </div>
+        <div class="user-card">
+            <div class="card-sbmenu box-profile">
+            <div class="text-center">
+            <!-- <img class="profile-user-img img-fluid img-circle" src="http://atc/portal/images/pe_pictures/117x117/{{AP_PICTURE1}}" alt="User profile picture"> -->
+            <img class="profile-user-img img-fluid img-circle" src="./assets/dist/img/foto1.png" alt="User profile picture">
+            </div>
+            <div class="text-center">
+                <span class="mensaje">Bienvenido</span>
+            </div>
+            <div class="text-center">
+                <p class="nombre-usuario"> {{DESCRIPTION}}</p>
+            </div>
+         </div>
+         <div class="card" style="background-color: #196cb7;">
+            <div class="card-titulo">
+            <h3 class="titulo-menu">MENU</h3>
+            </div>
+            <div class="card-body p-0" style="display: block;">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item" *ngFor="let item of menuItems">
+                       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item" *ngFor="let subMenu of item.submenu">
+                          <a [routerLink]="subMenu.url" class="nav-link" style="cursor: pointer">
+                            <i class="{{subMenu.icono}}"></i>
+                            <p class="ml-2">{{subMenu.titulo}}</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" style="cursor: pointer" (click)="logout()">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p class="ml-2">
+                          Salir
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</aside>

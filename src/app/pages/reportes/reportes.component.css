@@ -1,0 +1,30 @@
+.custom-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.page-count {
+  font-size: 14px;
+}
+
+.pager-controls {
+  display: flex;
+}
+
+.pager-btn {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.pager-btn:hover {
+  background-color: #aaa;
+}
