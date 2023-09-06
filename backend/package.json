@@ -1,0 +1,40 @@
+{
+  "name": "new_api",
+  "version": "1.0.0",
+  "description": "MONGODB MARIADB",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "typescript": "tsc --watch",
+    "start": "node index.js"
+  },
+  "author": "DEMIAN OLMEDO CADIMA",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@angular/cli": "^15.1.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^3.0.2",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.9.3",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2",
+    "smpp": "^0.6.0-rc.4",
+    "smpp-34": "^0.3.2",
+    "soap": "^1.0.0",
+    "socket.io": "^4.7.0",
+    "strong-soap": "^3.5.1",
+    "ws": "^8.13.0"
+  }
+}
